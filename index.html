@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Cartão Iterativo</title>
+
+</head>
+<body>
+  <div class="conteudo">
+
+    <img id='background' src="./images/bg-main-desktop.png" alt="">
+    
+    <div class="cartao frente-cartao">
+      <img src="./images/bg-card-front.png" alt="">
+      <img class="cartao-logo" src="./images/card-logo.svg" alt="frente"> 
+      <p class="numero-cartao">0000 0000 0000 0000</p>
+      <p class="nome-cartao">Izabela Esber</p>
+      <p class="data-exp-cartao">00/00</p>
+    </div>
+
+    <div class="cartao verso-cartao">
+      <img src="./images/bg-card-back.png" alt="">
+      <p class="cvc">000</p>
+    </div>
+
+    <div class="formulario">
+      <p class="etiqueta-nome">NOME DO TITULAR</p>
+      <input maxlength="20" placeholder="e.g. Jane Aplessed" type="text" class="input-nome">
+      <p class="erro-nome">Formato incorreto, somente letras e espaços!</p>
+      
+      <p class="etiqueta-numero">NÚMERO DO CARTÃO</p>
+      <input maxlength="19" placeholder="e.g. 0000 0000 0000 0000" type="text" class="input-numero">
+      <p class="erro-numero">Formato incorreto, somente números!</p>
+
+      <div class="data-cvc">
+        <div>
+          <p class="etiqueta-data-exp">DATA DE VALIDADE (MM/AA)</p>
+          <div class="inputs-data-exp">
+            <input maxlength="2" placeholder="MM" type="text" class="input-exp-MM">
+            <input maxlength="2" placeholder="AA" type="text" class="input-exp-AA">
+          </div>
+          <p class="erro-data-exp">Formato incorreto, somente números!</p>
+        </div>
+        
+        <div>
+          <p class="etiqueta-cvc">CVC</p>
+          <input maxlength="3" placeholder="e.g. 000" type="text" class="input-cvc">
+          <p class="erro-cvc">Formato incorreto, somente números!</p>
+        </div>
+      </div>
+      
+      <p class="erro-geral">Por favor, verifique os dados do cartão!</p>
+      <button class="botao confirmar">Confirmar</button>
+    </div>
+
+    <div class="mensagem-sucesso">
+      <img src="./images/icon-complete.svg" alt="">
+      <h1>OBRIGADO!</h1>
+      <p>Adicionamos os detalhes do seu cartão</p>
+      <button class="botao continuar">Continuar</button>
+    </div>
+    <div class="attribution">
+        Feito por <a href="https://github.com/izabelaex">Izabela Esber</a>.
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
