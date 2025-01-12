@@ -152,3 +152,22 @@
 .mensagem-sucesso p {
     color: hsl(279, 6%, 55%);
 }
+
+.meu {
+    text-align: center;
+    position: fixed; 
+    bottom: 10px; 
+    width: 100%; 
+    font-size: 14px; 
+    color: #555; 
+  }
+  
+  .meu a {
+    text-decoration: none; 
+    color: #007bff;/
+  }
+  
+  .meu a:hover {
+    text-decoration: underline; 
+  }
+  
